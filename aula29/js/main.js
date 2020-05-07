@@ -1,4 +1,4 @@
-let txt=document.querySelector("#txt");
+/* let txt=document.querySelector("#txt");
 const data= new Date();
 txt.innerHTML= formatarData(data);
 
@@ -30,4 +30,12 @@ function nomeDiaSemana(dia) {
 function nomeDoMes(mes) {
 	const meses=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
 	return meses[mes];
-}
+} */
+
+let txt=document.querySelector("#txt");
+const data= new Date();
+const opc={
+	dateStyle:'full',
+	timeStyle:'short',
+};
+txt.innerHTML= data.toLocaleDateString('pt-br',opc);
