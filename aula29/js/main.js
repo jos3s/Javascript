@@ -12,8 +12,9 @@ function formatarData(data) {
 	const hora=zero(data.getHours());
 	const min=zero(data.getMinutes());
 	return (
-		`${nomeDia}, ${data.getDate()} de ${nomeMes}` + 
-		` de ${data.getFullYear()} ${hora}:${min}` 
+		`${nomeDia}, ${data.getDate()} de ${nomeMes}` 
+		+ ` de ${data.getFullYear()}` 
+		+ `${hora}:${min}` 
 	);
 }
 
@@ -22,74 +23,11 @@ function zero(num){
 }
 
 function nomeDiaSemana(dia) {
-	let msg='';
-	switch (dia){
-		case 0:
-		    msg='Domingo';
-		    return msg;
-		case 1:
-		    msg='Segunda-feira';
-		    return msg;
-		case 2:
-		    msg='Terça-feira';
-		    return msg;
-		case 3:
-		    msg='Quarta-feira';
-		    return msg;
-		case 4:
-		    msg='Quinta-feira';
-		    return msg;
-		case 5:
-		    msg='Sexta-feira';
-		    return msg;
-		case 6:
-		    msg='Sabado';
-		    return msg;
-		default:
-		    return msg;
-    } 
+	const dias=['domingo','segunda-feira', 'terça-feira','quarta-feira','quinta-feira','sexta-feira','sábado'];
+	return dias[dia];
 }
 
 function nomeDoMes(mes) {
-	let msg='';
-	switch (mes){
-		case 0:
-		    msg='janeiro';
-		    return msg;
-		case 1:
-		    msg='fevereiro';
-		    return msg;
-		case 2:
-		    msg='março';
-		    return msg;
-		case 3:
-		    msg='abril';
-		    return msg;
-		case 4:
-		    msg='maio';
-		    return msg;
-		case 5:
-		    msg='junho';
-		    return msg;
-		case 6:
-		    msg='julho';
-		    return msg;
-		case 7:
-		    msg='agosto';
-		    return msg;
-		case 8:
-		    msg='setembro';
-		    return msg;
-		case 9:
-		    msg='outubro';
-		    return msg;
-		case 10:
-		    msg='novembro';
-		    return msg;
-		case 11:
-		    msg='dezembro';
-		    return msg;
-		default:
-		    return msg;
-    } 
+	const meses=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro']
+	return meses[mes];
 }
