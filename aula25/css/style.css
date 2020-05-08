@@ -19,8 +19,8 @@ body {
 }
 
 .container {
-  max-width: 640px;
-  margin: 50px auto;
+  max-width: 90%;
+  margin: 100px auto;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -36,6 +36,12 @@ form input {
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 form input:focus {
@@ -44,6 +50,7 @@ form input:focus {
 
 form button {
   border: none;
+  border-radius: 4px;
   background: var(--primary-color);
   color: #fff;
   font-size: 18px;
@@ -51,6 +58,10 @@ form button {
   height: 50px;
   cursor: pointer;
   margin-top: 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 form button:hover {
@@ -64,4 +75,11 @@ form button:hover {
 
 .invalido {
   background: rgb(255, 150, 150);
+}
+
+@media screen and (min-width:440px){
+  .container {
+    max-width: 430px;
+    padding: 30px;
+  }
 }
