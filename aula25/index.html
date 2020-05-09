@@ -5,19 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Calcule seu IMC</title>
+		<script src="https://kit.fontawesome.com/ff7538096c.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
 		<section class="container">
 			<h1>Calcule seu IMC</h1>
 			<form action="/" id="formulario" method="POST">
-				<label for="peso">Peso</label>
-				<input type="text" id="peso" name="peso" placeholder="56.57">
-				<label for="altura">Altura</label>
-				<input type="text" id="altura" name="altura" placeholder="1.75">
-				<button type="submit">Enviar</button>
+				<label for="peso">Peso:
+					<input type="text" id="peso" name="peso" placeholder="56.57">
+				</label>
+				<label for="altura">Altura:
+					<input type="text" id="altura" name="altura" placeholder="1.75">
+				</label>
+				<button type="submit">Enviar <i class="far fa-paper-plane"></i></button>
 			</form>
 		<div id="resultado"></div>
+		<h2 class="historico-txt">Histórico <i class="fas fa-chevron-down"></i></h2>
+		<ul class="historico"></ul>
 		</section>
 		<footer>
 			<p>Feito por <a href="http://jos3s.github.io">José Ulisses</a> | <a href="https://github.com/jos3s/Javascript/tree/master/aula48">Código fonte</a></p>

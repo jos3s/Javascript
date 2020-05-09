@@ -19,8 +19,8 @@ body {
 }
 
 .container {
-  max-width: 90%;
-  margin: 100px auto;
+  max-width: 80%;
+  margin: 70px auto 50px;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -76,6 +76,50 @@ form button:hover {
 .invalido {
   background: rgb(255, 150, 150);
 }
+
+.remover{
+  padding: .5em;
+  border:none;
+  border-radius: 4px;
+  background: rgb(255, 150, 150);
+}
+.remover:hover{
+  cursor: pointer;
+}
+.historico-txt{
+  cursor: pointer;
+  position: relative;
+}
+.historico-txt>i{
+  text-align: center;
+}
+.historico-txt:hover{
+  opacity: .85;
+}
+
+ul{
+  padding-left: 0;
+}
+ul>li{
+  margin-top: .5em;
+  display: none;
+  list-style: none;
+}
+ul.open>li{
+  display: block;
+}
+li>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+li>div>p{
+  font-size: 14px;
+}
+button>i{
+  margin-left: 10px;
+}
 footer p{
   text-align: center;
   color: white;
@@ -91,5 +135,23 @@ footer a:hover{
   .container {
     max-width: 430px;
     padding: 30px;
+  }
+}
+@media screen and (min-width:800px){
+  .container {
+    max-width: 80%;
+  }
+  form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  form>label, form>button{
+    margin: 0;
+    flex: 0 1 30%;
+  }
+  label>input{
+    margin: 0;
   }
 }
