@@ -45,6 +45,7 @@ input[type=text]{
   width: 98%;
 }
 button{
+  cursor: pointer;
   box-sizing: border-box;
   width: 90px;
   padding: .7em;
