@@ -27,7 +27,7 @@ body {
   border-radius: 10px;
 }
 input[type=text]{
-  width:70%;
+  width:75%;
 }
 .entrada{
   margin-bottom: 15px;
@@ -40,7 +40,9 @@ input[type=text]{
   -o-border-radius: 4px;
 }
 .adicionar{
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
 }
 button{
   box-sizing: border-box;
@@ -100,10 +102,10 @@ small{
 }
 @media screen and (min-width:500px){
   input[type=text]{
-    width:60%;
+    width:55%;
   }
   .adicionar{
-    width: 20%;
+    width: 27%;
   }
 }
 @media screen and (min-width:600px){
@@ -111,7 +113,7 @@ small{
     width:50%;
   }
   .adicionar{
-    width: 30%;
+    width: 35%;
   }
 }
 @media screen and (min-width:700px){
@@ -133,7 +135,7 @@ small{
     margin-left: 3em;
   }
   .adicionar{
-    width: 20%;
+    width: 30%;
   }
 }
 @media screen and (min-width:900px){
@@ -145,5 +147,8 @@ small{
   }
   input[type=text]{
     width:40%;
+  }
+  .adicionar{
+    width: 20%;
   }
 }
