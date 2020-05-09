@@ -76,7 +76,17 @@ form button:hover {
 .invalido {
   background: rgb(255, 150, 150);
 }
-
+footer p{
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  opacity: .7;
+}
 @media screen and (min-width:440px){
   .container {
     max-width: 430px;

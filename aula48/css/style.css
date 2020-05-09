@@ -21,7 +21,7 @@ body {
 .container {
   box-shadow: 0px 0px 58px -5px rgba(0,0,0,0.58);
   max-width: 90%;
-  margin: 100px auto;
+  margin: 100px auto 200px;
   background: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -74,6 +74,17 @@ li{
 
 li>button{
   float: right;
+}
+footer p{
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  opacity: .7;
 }
 @media screen and (min-width:500px){
   input[type=text]{
