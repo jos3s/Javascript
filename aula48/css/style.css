@@ -26,8 +26,11 @@ body {
   padding: 30px;
   border-radius: 10px;
 }
-
+input[type=text]{
+  width:70%;
+}
 .entrada{
+  margin-bottom: 15px;
   padding: .7em;
   border:1px solid gray;
   border-radius: 4px;
@@ -35,6 +38,9 @@ body {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+.adicionar{
+  width: 50%;
 }
 button{
   box-sizing: border-box;
@@ -50,6 +56,7 @@ button{
 button:hover{
   opacity: .89;
 }
+
 button.remover{
   margin-bottom: .7em;
   width: 70px;
@@ -68,7 +75,22 @@ li{
 li>button{
   float: right;
 }
-
+@media screen and (min-width:500px){
+  input[type=text]{
+    width:60%;
+  }
+  .adicionar{
+    width: 20%;
+  }
+}
+@media screen and (min-width:600px){
+  input[type=text]{
+    width:50%;
+  }
+  .adicionar{
+    width: 30%;
+  }
+}
 @media screen and (min-width:700px){
   .container {
     max-width: 90%;
@@ -87,6 +109,9 @@ li>button{
   li:nth-child(even){
     margin-left: 3em;
   }
+  .adicionar{
+    width: 20%;
+  }
 }
 @media screen and (min-width:900px){
   .container {
@@ -95,5 +120,8 @@ li>button{
   li{
     margin-top: .5em;
     flex: 0 1 45%;
+  }
+  input[type=text]{
+    width:40%;
   }
 }
