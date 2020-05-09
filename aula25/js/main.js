@@ -104,7 +104,7 @@ function salvarHistorico() {
 }
 function formatarTexto(txt){
 	let texto=txt.innerText;
-	texto=texto.slice(0,texto.indexOf('P')-1)
+	texto=texto.slice(0,texto.lastIndexOf(')')+1)
     return texto;
 }
 function formatarValores(valores){
