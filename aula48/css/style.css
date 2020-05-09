@@ -58,14 +58,19 @@ button:hover{
 }
 
 button.remover{
+  width:90px;
   margin-bottom: .7em;
-  width: 70px;
   padding: .5em;
   margin-left: 30px;
   border: 2px solid #c62828;
   background-color: #e53935;
 }
-
+.remover>i{
+  margin-left: 10px;
+}
+.adicionar>i{
+  margin-right: 10px;
+}
 li{
   margin-top: 1em;
   width: 100%;

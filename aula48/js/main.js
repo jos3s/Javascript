@@ -18,7 +18,7 @@ window.addEventListener('click', function(el){
     }
 });
 
-function criarElemento(e, txt){
+function criarElemento(e, txt=''){
     let elemento=document.createElement(e);
     elemento.textContent=txt;
     return elemento;
@@ -34,6 +34,9 @@ function criarBotao(li) {
     const apagar=criarElemento('button','Apagar');
     apagar.setAttribute('class','remover');
     apagar.setAttribute('tittle','Apagar a tarefa');
+    const i=criarElemento('i','');
+    i.setAttribute('class','fas fa-trash');
+    apagar.appendChild(i);
     li.appendChild(apagar);
 }
 function limparInput() {
