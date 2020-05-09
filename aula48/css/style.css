@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  box-shadow: 0px 0px 58px -5px rgba(0,0,0,0.58);
+  max-width: 90%;
+  margin: 100px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.entrada{
+  padding: .7em;
+  border:1px solid gray;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+button{
+  box-sizing: border-box;
+  width: 90px;
+  padding: .7em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  opacity: 1;
+  border: 2px solid var(--primary-color-darker) ;
+  background-color: var(--primary-color);
+}
+button:hover{
+  opacity: .89;
+}
+button.remover{
+  margin-bottom: .7em;
+  width: 70px;
+  padding: .5em;
+  margin-left: 30px;
+  border: 2px solid #c62828;
+  background-color: #e53935;
+}
+
+li{
+  margin-top: 1em;
+  width: 100%;
+  white-space: pre-line;
+}
+
+li>button{
+  float: right;
+}
+
+@media screen and (min-width:700px){
+  .container {
+    max-width: 90%;
+    padding: 30px;
+  }
+  ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  li{
+    margin-top: .5em;
+    flex: 0 1 40%;
+  }
+  li:nth-child(even){
+    margin-left: 3em;
+  }
+}
+@media screen and (min-width:900px){
+  .container {
+    max-width: 80%;
+  }
+  li{
+    margin-top: .5em;
+    flex: 0 1 45%;
+  }
+}
