@@ -59,9 +59,7 @@ button:hover{
 
 button.remover{
   width:90px;
-  margin-bottom: .7em;
-  padding: .5em;
-  margin-left: 30px;
+  padding: .4em;
   border: 2px solid #c62828;
   background-color: #e53935;
 }
@@ -72,11 +70,15 @@ button.remover{
   margin-right: 10px;
 }
 li{
-  margin-top: 1em;
   width: 100%;
   white-space: pre-line;
 }
-
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
 li>button{
   float: right;
 }
@@ -90,6 +92,11 @@ footer a{
 }
 footer a:hover{
   opacity: .7;
+}
+small{
+  color: gray;
+  font-size: 11px;
+  float: right;
 }
 @media screen and (min-width:500px){
   input[type=text]{
@@ -134,7 +141,6 @@ footer a:hover{
     max-width: 80%;
   }
   li{
-    margin-top: .5em;
     flex: 0 1 45%;
   }
   input[type=text]{
