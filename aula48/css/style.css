@@ -22,7 +22,7 @@ body {
   box-shadow: 0px 0px 58px -5px rgba(0,0,0,0.58);
   max-width: 90%;
   margin: 100px auto 200px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 10px;
 }
@@ -32,7 +32,7 @@ input[type=text]{
 .entrada{
   margin-bottom: 15px;
   padding: .7em;
-  border:1px solid gray;
+  border:1px solid #BDBDBD;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -76,15 +76,40 @@ button.remover{
   display: flex;
   flex: row;
   justify-content: space-between;
+  transition: .5s;
 }
 .checado{
+  transition: .5s;
   color: #757575;
   text-decoration: line-through;
 }
+label, input{
+  cursor: pointer;
+}
+
+input[type="checkbox"]{
+  margin-top: 1em;
+  margin-bottom:1em;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: #E0E0E0;
+  outline: none;
+  transition: .5s;
+  border: 2px solid var(--primary-color-darker);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+}
+input:checked[type="checkbox"]{
+  background: var(--primary-color); 
+}
+
 ul{
   padding-left: 0;
 }
 li{
+  color: #212121;
   list-style: none;
   width: 100%;
   white-space: pre-line;
@@ -110,7 +135,7 @@ footer a:hover{
   opacity: .7;
 }
 small{
-  color: gray;
+  color: #37474F;
   font-size: 11px;
   float: right;
 }
