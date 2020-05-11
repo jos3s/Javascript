@@ -88,8 +88,8 @@ label, input{
 }
 
 input[type="checkbox"]{
-  margin-top: 1em;
-  margin-bottom:1em;
+  margin-top: .5em;
+  margin-bottom:.5em;
   position: relative;
   width: 20px;
   height: 20px;
