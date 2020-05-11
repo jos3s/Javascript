@@ -27,9 +27,10 @@ body {
   border-radius: 10px;
 }
 input[type=text]{
-  width:75%;
+  width: 79.5%;
 }
 .entrada{
+  cursor: auto;
   margin-bottom: 15px;
   padding: .7em;
   border:1px solid #BDBDBD;
@@ -42,7 +43,7 @@ input[type=text]{
 .adicionar{
   margin-left: auto;
   margin-right: auto;
-  width: 98%;
+  width: 100%;
 }
 button{
   cursor: pointer;
@@ -88,6 +89,7 @@ label, input{
 }
 
 input[type="checkbox"]{
+  flex: 0 0 auto;
   margin-top: .5em;
   margin-bottom:.5em;
   position: relative;
@@ -115,6 +117,7 @@ li{
   white-space: pre-line;
 }
 div{
+  margin-top: .5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -141,7 +144,7 @@ small{
 }
 @media screen and (min-width:500px){
   input[type=text]{
-    width:55%;
+    width: 53%;
   }
   .adicionar{
     width: 27%;
@@ -149,10 +152,10 @@ small{
 }
 @media screen and (min-width:600px){
   input[type=text]{
-    width:50%;
+    width: 58.5%;
   }
   .adicionar{
-    width: 35%;
+    width: 25%;
   }
 }
 @media screen and (min-width:700px){
@@ -174,7 +177,7 @@ small{
     margin-left: 3em;
   }
   .adicionar{
-    width: 30%;
+    width: 29%;
   }
 }
 @media screen and (min-width:900px){
@@ -185,7 +188,15 @@ small{
     flex: 0 1 45%;
   }
   input[type=text]{
-    width:40%;
+    width: 55%;
+  }
+  .adicionar{
+    width: 33%;
+  }
+}
+@media screen and (min-width:900px){
+  input[type=text]{
+    width: 40%;
   }
   .adicionar{
     width: 20%;
