@@ -72,7 +72,20 @@ button.remover{
 .adicionar>i{
   margin-right: 10px;
 }
+.label-tarefa{
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.checado{
+  color: #757575;
+  text-decoration: line-through;
+}
+ul{
+  padding-left: 0;
+}
 li{
+  list-style: none;
   width: 100%;
   white-space: pre-line;
 }
