@@ -15,7 +15,7 @@ const outraCoisa={
 outraCoisa.nome='Caneta';
 console.log(outraCoisa);
 
-const caneca=Object.assign({},produto,{material:'porcelana'});  //@Recebe 1 ou n objetos
+const caneca=Object.assign({},produto,{material:'porcelana'});  //%Recebe 1 ou n objetos
 console.log(caneca);
 
 const caneca2={nome:produto.nome};

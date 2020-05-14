@@ -1,7 +1,7 @@
 // Object.defineProperty() e Object.defineProperties()
 
 function Produto(nome,preco,estoque) {
-    //@ Configura várias propriedade
+    //% Configura várias propriedade
     Object.defineProperties(this,{
         nome:{
             enumerable  :true,   //mostra ou esconde a chave
@@ -17,7 +17,7 @@ function Produto(nome,preco,estoque) {
         },
     });
 
-    //@ Configura apenas uma propriedade
+    //% Configura apenas uma propriedade
     Object.defineProperty(this,'estoque',{
         enumerable  :true,      //mostra ou esconde a chave
         value       :estoque,   //valor ou função

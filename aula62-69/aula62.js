@@ -27,16 +27,16 @@ nomes.push('Eudes');
 nomes.unshift('Lucas');
 console.log(nomes);
 
-//@ slice() -> fatia um arry
+//% slice() -> fatia um arry
 const nomes2=nomes.slice(1,3);
 //+ const nomes2=nomes.slice(1,-1);
 console.log(nomes2);
 
-//@ split() -> fatia uma string com base em algo
+//% split() -> fatia uma string com base em algo
 const meu='José Ulisses Silva';
 const meuArr=meu.split(' ');
 console.log(meuArr);
 
-//@ join() -> une um array com base em algo
+//% join() -> une um array com base em algo
 const meuNome=meuArr.join('.');
 console.log(meuNome);

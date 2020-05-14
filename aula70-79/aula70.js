@@ -1,6 +1,6 @@
 //Revisando objetos
 
-//@ Objetos literais
+//% Objetos literais
 const p1={
     nome:"José Ulisses", 
     sobrenome:'Silva'
@@ -29,7 +29,7 @@ for (const key in p2){
 }
 
 
-//@ Factory function
+//% Factory function
 function criarPessoa(nome,sobrenome) {
     return {
         nome,
@@ -47,7 +47,7 @@ Object.freeze(pessoa1); //$ Congela a pessoa 1
 pessoa1.nome='Carlos';
 console.log(pessoa1.nomeCompleto);
 
-//@ Constructor function
+//% Constructor function
 function Cliente(nome,sobrenome) {
     this.nome=nome;
     this.sobrenome=sobrenome;
