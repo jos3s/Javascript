@@ -8,15 +8,18 @@ document.addEventListener('click', (el)=>{
     }
 });
 
-function carregaPagina(el) {
-    const href=el.getAttribute('href');
-    fetch(href)
-        .then(response=>{
-            if(response.status <200 && response.status>=300) throw new Error('Error 404');
-            return  response.text();
-        })
-        .then(html=> carregaResultado(html))
-        .cath(e=>console.log(e));
+async function carregaPagina(el) {
+    try{
+        const href=el.getAttribute('href');
+        const response= await fetch('href');
+
+        if(response.status <200 && response.status>=300) throw new Error('Error 404');
+        
+        const hmtl=await response.text();
+        carregaResultado(html);
+    }catch(e){
+        console.error(e);
+    }
 }
 
 function carregaResultado(response) {
