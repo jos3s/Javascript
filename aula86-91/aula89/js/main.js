@@ -23,20 +23,18 @@ document.addEventListener('click', (el)=>{
     }
 });
 
-function carregaPagina(el) {
+async function carregaPagina(el) {
     const href=el.getAttribute('href');
     const objConfig={
         method:'GET',
         url:href,
+    };
+    try{
+        const response=await request(objConfig);
+        carregaResultado(response);
+    }catch(e){
+        console.log(e);
     }
-    request(objConfig)
-        .then(response=>{
-            carregaResultado(response);
-        }) 
-        .catch(erro=>{
-            console.log(erro);
-        });
-    
 }
 
 function carregaResultado(response) {
