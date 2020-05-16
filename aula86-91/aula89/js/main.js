@@ -1,14 +1,16 @@
 const request = obj=>{
-    const xhr=new XMLHttpRequest();
-    xhr.open(obj.method,obj.url,true);
-    xhr.send();
-
-    xhr.addEventListener('load', ()=>{
-        if(xhr.status>=200 && xhr.status<300){
-            obj.success(xhr.responseText);
-        }else{
-            obj.error(xhr.statusText);
-        }      
+    return new Promise((resolve,reject)=>{
+        const xhr=new XMLHttpRequest();
+        xhr.open(obj.method,obj.url,true);
+        xhr.send();
+    
+        xhr.addEventListener('load', ()=>{
+            if(xhr.status>=200 && xhr.status<300){
+                resolve(xhr.responseText);
+            }else{
+                reject(xhr.statusText);
+            }      
+        });
     });
 };
 
@@ -23,16 +25,18 @@ document.addEventListener('click', (el)=>{
 
 function carregaPagina(el) {
     const href=el.getAttribute('href');
-    request({
+    const objConfig={
         method:'GET',
         url:href,
-        success(response){
+    }
+    request(objConfig)
+        .then(response=>{
             carregaResultado(response);
-        },
-        error(erroText){
-            console.log(erroText);
-        }
-    });
+        }) 
+        .catch(erro=>{
+            console.log(erro);
+        });
+    
 }
 
 function carregaResultado(response) {
