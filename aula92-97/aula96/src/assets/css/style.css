@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 90%;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1{ 
+  text-align: center;
+  margin-bottom: 30px;
+}
+.resultado{
+  color:var(--primary-color);
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+button{
+  margin-top: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  transition: .2s all ease-in-out;
+  opacity: 1;
+  border: 2px solid var(--primary-color-darker) ;
+  background-color: var(--primary-color);
+}
+button:hover{
+  opacity: .89;
+}
+
+@media screen and (min-width:600px){
+  .container{
+    max-width: 80%;
+  }
+  button{
+    width: 40%;
+  }
+}
+
+@media screen and (min-width:800px){
+  .container{
+    max-width: 70%;
+  }
+  button{
+    width: 40%;
+  }
+}
+
+@media screen and (min-width:1000px){
+  .container{
+    max-width: 40%;
+  }
+}
