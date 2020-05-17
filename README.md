@@ -10,3 +10,4 @@
   - [x] Salvar a data da criação da tarefa
   - [x] Marcar como concluida uma tarefa
 - Calculadora | [View](https://simplercalculator.netlify.app/)
+- Gerador de CPF | [View](https://simplecpf.netlify.app/)
