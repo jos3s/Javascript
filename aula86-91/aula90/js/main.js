@@ -11,11 +11,11 @@ document.addEventListener('click', (el)=>{
 async function carregaPagina(el) {
     try{
         const href=el.getAttribute('href');
-        const response= await fetch('href');
+        const response= await fetch(href);
 
         if(response.status <200 && response.status>=300) throw new Error('Error 404');
         
-        const hmtl=await response.text();
+        const html=await response.text();
         carregaResultado(html);
     }catch(e){
         console.error(e);
