@@ -1,5 +1,7 @@
 # Javascript
 
+Projetos feito com base no curso de Javascript do Luiz Otávio Miranda na Udemy.
+
 ## Projetos 
 
 - Calculadora de IMC | [View](https://simpleimc.netlify.app/)
@@ -11,3 +13,4 @@
   - [x] Marcar como concluida uma tarefa
 - Calculadora | [View](https://simplercalculator.netlify.app/)
 - Gerador de CPF | [View](https://simplecpf.netlify.app/)
+- Gerador senhas | [View](https://simplepassword.netlify.app)
