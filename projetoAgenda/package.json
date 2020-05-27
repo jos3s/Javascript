@@ -24,7 +24,8 @@
     "helmet": "^3.21.2",
     "mongoose": "^5.7.7",
     "regenerator-runtime": "^0.13.3",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0",
+    "validator": "^13.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.4",
